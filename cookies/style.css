@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+/* NAVIGATION MENU */
+.navigation-menu {
+  background-color: navy;
+}
+.navigation-menu .container {
+  position: relative;
+}
+.userinfo {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.userinfo p {
+  color: #fff;
+}
+.userinfo p span {
+  color: rgb(206, 2, 2);
+}
+.navigation-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+.navigation-menu ul li {
+  display: inline;
+}
+.navigation-menu ul li a {
+  display: inline-block;
+  padding: 8px 12px;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+.navigation-menu ul li a:hover,
+.navigation-menu ul li.active a {
+  background-color: rgb(206, 2, 2);
+}
+
+/* USER LOGIN */
+.content {
+  padding: 40px 0;
+}
+.content .container {
+  width: 40%;
+  padding: 20px 20px 40px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+.title {
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: capitalize;
+}
+.message {
+  display: block;
+  color: red;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+.user-login form label {
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #777;
+  cursor: pointer;
+}
+.user-login form label span {
+  color: rgb(206, 2, 2);
+}
+.user-login form input {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  font-size: 15px;
+  color: #888;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.user-login form input[type="password"] {
+  margin-bottom: 20px;
+}
+.user-login form input[type="reset"] {
+  width: 48%;
+  margin-right: 2%;
+  font-size: bold;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: rgb(206, 2, 2);
+  cursor: pointer;
+}
+.user-login form input[type="submit"] {
+  width: 48%;
+  margin-left: 2%;
+  font-size: bold;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: navy;
+  cursor: pointer;
+}
+.user-login form label.keep {
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-transform: lowercase;
+  font-weight: bold;
+  color: #777;
+  cursor: pointer;
+}
+.user-login form label.keep input[type="checkbox"] {
+  display: inline-block;
+  text-align: left;
+  width: 5%;
+  float: none;
+  margin-top: 3px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.user-login form input::placeholder {
+  font-style: italic;
+}
+.user-login form input:focus {
+  outline: none;
+}
+
+/* ADMIN PANEL */
+.user-info table {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.user-info table tr th {
+  padding: 5px 10px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.user-info table tr th:nth-child(odd) {
+  background-color: rgb(1, 1, 129);
+}
+.user-info table tr th:nth-child(even) {
+  background-color: rgb(206, 2, 2);
+}
+.user-info table tr td {
+  padding: 5px 10px;
+  color: #333;
+  font-size: 15px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.user-info table tr td:nth-child(odd) {
+  background-color: rgba(1, 1, 129, 0.2);
+}
+.user-info table tr td:nth-child(even) {
+  background-color: rgba(206, 2, 2, 0.2);
+}
+.user-info table tr td:hover {
+  color: #000;
+  background-color: palegreen;
+}
+
+/* FOOTER SECTION */
+.footer-section {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: navy;
+}
+.footer-section .copyright {
+  text-align: center;
+}
+.footer-section .copyright p {
+  padding: 8px 0;
+  text-transform: capitalize;
+  color: #fff;
+}
